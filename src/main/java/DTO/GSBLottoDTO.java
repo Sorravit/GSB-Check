@@ -2,33 +2,22 @@ package DTO;
 
 /**
  * Created by Sorravit on 12/11/2559.
+ * For selenium
  */
 public class GSBLottoDTO {
     private String fterm;
     private String fgroup;
     private String fnumFrom;
     private String fnumto;
-    private String fmonthFrom;
-    private String fyearFrom;
-    private String fmonthto;
-    private String fyearto;
-    private String x;
-    private String y;
 
     public GSBLottoDTO() {
     }
 
-    public GSBLottoDTO(String fterm, String fgroup, String fnumFrom, String fnumto, String fmonthFrom, String fyearFrom, String fmonthto, String fyearto, String x, String y) {
+    public GSBLottoDTO(String fterm, String fgroup, String fnumFrom, String fnumto) {
         this.fterm = fterm;
         this.fgroup = fgroup;
         this.fnumFrom = fnumFrom;
         this.fnumto = fnumto;
-        this.fmonthFrom = fmonthFrom;
-        this.fyearFrom = fyearFrom;
-        this.fmonthto = fmonthto;
-        this.fyearto = fyearto;
-        this.x = x;
-        this.y = y;
     }
 
     @Override
@@ -38,12 +27,6 @@ public class GSBLottoDTO {
                 ", fgroup='" + fgroup + '\'' +
                 ", fnumFrom='" + fnumFrom + '\'' +
                 ", fnumto='" + fnumto + '\'' +
-                ", fmonthFrom='" + fmonthFrom + '\'' +
-                ", fyearFrom='" + fyearFrom + '\'' +
-                ", fmonthto='" + fmonthto + '\'' +
-                ", fyearto='" + fyearto + '\'' +
-                ", x='" + x + '\'' +
-                ", y='" + y + '\'' +
                 '}';
     }
 
@@ -77,53 +60,5 @@ public class GSBLottoDTO {
 
     public void setFnumto(String fnumto) {
         this.fnumto = fnumto;
-    }
-
-    public String getFmonthFrom() {
-        return fmonthFrom;
-    }
-
-    public void setFmonthFrom(String fmonthFrom) {
-        this.fmonthFrom = fmonthFrom;
-    }
-
-    public String getFyearFrom() {
-        return fyearFrom;
-    }
-
-    public void setFyearFrom(String fyearFrom) {
-        this.fyearFrom = fyearFrom;
-    }
-
-    public String getFmonthto() {
-        return fmonthto;
-    }
-
-    public void setFmonthto(String fmonthto) {
-        this.fmonthto = fmonthto;
-    }
-
-    public String getFyearto() {
-        return fyearto;
-    }
-
-    public void setFyearto(String fyearto) {
-        this.fyearto = fyearto;
-    }
-
-    public String getX() {
-        return x;
-    }
-
-    public void setX(String x) {
-        this.x = x;
-    }
-
-    public String getY() {
-        return y;
-    }
-
-    public void setY(String y) {
-        this.y = y;
     }
 }
