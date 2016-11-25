@@ -2,5 +2,4 @@
 .gitignore
 .idea/
 GSB-Check.iml
-pom.xml
 target/
