@@ -23,7 +23,7 @@ public class GSBLottoCheck {
         WebDriver driver = new ChromeDriver();
         System.setIn(new FileInputStream("GSBData.txt"));
         System.setOut(new PrintStream(new FileOutputStream("Result.html")));
-        System.out.print("<head><meta http-equiv='Content-Type' content='text/html; '><title>ผลสลากออมสินพิเศษของทุกคน</title><link href='http://psc.gsb.or.th/PSCINQ/css/gsb-lottery.css' rel='stylesheet' type='text/css'></head><Body>  <div class='Wrapper'><div id='Results'>");
+        System.out.print("<head><meta charset=\"UTF-8\"><meta http-equiv='Content-Type' content='text/html; '><title>ผลสลากออมสินพิเศษของทุกคน</title><link href='http://psc.gsb.or.th/PSCINQ/css/gsb-lottery.css' rel='stylesheet' type='text/css'></head><Body>  <div class='Wrapper'><div id='Results'>");
         Scanner in = new Scanner(System.in);
         while(in.hasNext()){
             StringTokenizer st = new StringTokenizer(in.nextLine(), ",");
